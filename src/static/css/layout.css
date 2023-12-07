@@ -41,10 +41,18 @@ header  {
     height: 100%;
     object-fit: cover; 
 }
+.logo{
+
+    margin: 0 0px 0 10px; 
+    
+    height: 32px;
+    text-shadow: 0 0 100px rgba(0, 0, 0)
+}
 .head{
     display: grid;
     grid-template-columns: 2fr 1fr;
     box-sizing: border-box;
+    height: 32px;
 
 }
 .nav{
