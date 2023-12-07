@@ -26,23 +26,22 @@ header  {
     position: absolute;
     top: 0;
     left: 0;
-    
     height: 100%;
-    transition: transform 1s ease; 
     z-index: -1;
-    overflow-x: visible ;
-    
+    transition: transform 1s ease;
 }
 .fondo-sub1{
-    width: 300%;
+
+    display: flex;
+    flex-wrap: nowrap;
     height: 100%;
 }
 .fondo img {
-    width: 33.333%; /* Divide el contenedor en secciones iguales para cada imagen */
+    flex: 1 0 auto;
+    width: 100%; 
     height: 100%;
     float: left; 
     object-fit: cover; 
-    
 }
 .head{
     display: grid;

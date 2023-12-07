@@ -64,5 +64,22 @@
             <li>Económicos</li>
         </section>
     </main>
+
+
+<script>
+const fondo = document.querySelector('.fondo');
+
+    setInterval(() => {
+        fondo.style.transform = 'translateX(-100%)'; /* Ajusta según la cantidad de imágenes */
+        setTimeout(() => {
+            fondo.appendChild(fondo.firstElementChild);
+            fondo.style.transition = 'none';
+            fondo.style.transform = 'translateX(0)';
+            setTimeout(() => {
+                fondo.style.transition = 'transform 1s ease'; /* Restaura la transición después de mover la primera imagen al final */
+            });
+        }, 8000);
+    }, 8000);
+    </script>
 </body>
 </html>
