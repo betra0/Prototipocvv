@@ -12,8 +12,13 @@
 <body>
 
     <header>
+    
         <div class="fondo">
-            <img src="{{ url_for('static', filename='img/5.jpg') }}" alt="Imagen 1">
+            <div class="fondo-sub1">
+                <img src="{{ url_for('static', filename='img/1.jpg') }}" alt="Imagen 1">
+                <img src="{{ url_for('static', filename='img/5.jpg') }}" alt="Imagen 1">
+            </div>
+           
         </div>
 
         <div class="head">
@@ -26,7 +31,9 @@
         </div>
 
         <div class="h-body">
-            <i class="bi bi-arrow-left"></i>
+            <button class="h-rows">
+                <i class="bi bi-arrow-left"></i></button>
+            
             <div class="main">
                 <h1>¿BUSCAS ALOJAMIENTO EN ANTOFAGASTA? </h1>
                 <h3>Reserva ahora, en cómodos departamentos en 
@@ -36,13 +43,26 @@
 
                 
             </div>
-            <i class="bi bi-arrow-right"></i>
+            <button class="h-rows">
+                <i class="bi bi-arrow-right"></i></button>
             
-
+            
         </div>
-        
-        
+           
     </header>
-
+<!-- Fin Header  -->
+    <main>
+        <section>
+            <h1>Todo lo que Necesitas</h1>
+            <li>Especial para trabajadores y 
+                turistas en general</li>
+            <li>Buena ubicación</li>
+            <li>Hermosas vistas</li>
+            <li>Calidad mobiliario y limpieza</li>
+            <li>Sectores tranquilos y seguros</li>
+            <li>Internet Wi-Fi</li>
+            <li>Económicos</li>
+        </section>
+    </main>
 </body>
 </html>
