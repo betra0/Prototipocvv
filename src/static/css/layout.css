@@ -16,9 +16,8 @@ header  {
     background-color: rgba(0, 0, 0, 0.238);
     display: flex;
     flex-direction: column;
-    
-
     position: relative;
+    overflow-x: hidden;
 }
 
 
@@ -33,6 +32,7 @@ header  {
     transition: transform 1s ease;
     display: flex;
     flex-wrap: nowrap;
+
 }
 
 .fondo img {
@@ -145,4 +145,10 @@ header  {
     box-shadow: 0 0 20px rgb(255, 255, 255);
     transform: scale(1.1) rotate(-1deg); 
     color: rgb(255, 255, 255);
+}
+
+section {
+    width: 80%; /* Ancho del section */
+    margin: 0 auto; /* Centra el section horizontalmente */
+    text-align: left; /* Alinea el texto a la izquierda */
 }

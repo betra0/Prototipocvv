@@ -15,12 +15,13 @@
     
         <div class="fondo">
                 <img src="{{ url_for('static', filename='img/1.jpg') }}" alt="Imagen 1">
-                <img src="{{ url_for('static', filename='img/5.jpg') }}" alt="Imagen 1">
+                <img src="{{ url_for('static', filename='img/4.jpg') }}" alt="Imagen 2">
+                <img src="{{ url_for('static', filename='img/5.jpg') }}" alt="Imagen 3">
            
         </div>
 
         <div class="head">
-            <div>Logo</div>
+            <div>Propiedades CVV</div>
             <div class="nav">
                 <a href="">     Inicio</a>
                 <a href=""> Departamentos</a>
@@ -65,8 +66,21 @@
     </main>
 
 
-<script>
-
+    <script>
+        const fondo = document.querySelector('.fondo');
+        const numimagenes = document.querySelectorAll('.fondo img').length;
+        const tiempoCambio = 7000; // Ajusta según tus necesidades
+        let diapo = 0;
+        console.log(diapo);
+    
+        setInterval(() => {
+            diapo++;
+            if(diapo > numimagenes-1){
+                diapo = 0;
+            }
+            fondo.style.transform = `translateX(-${diapo*100}%)`;
+        }, tiempoCambio);
     </script>
+    
 </body>
 </html>
