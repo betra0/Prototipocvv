@@ -19,7 +19,7 @@ header  {
     display: flex;
     flex-direction: column;
     position: relative;
-    /* overflow-x: hidden; */
+    overflow-x: hidden;
     border-bottom: 4px  outset rgba(0, 0, 0, 0.585);
     border-radius: 0 0 5px 5px;
 }
