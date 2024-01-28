@@ -1,0 +1,29 @@
+.pilaimagen1{
+    height: 300px;
+    width: 300px;
+    display: flex;
+}
+.pilaimagen1 img{
+        width: 0;
+                                                                                            
+        object-fit: cover;
+        opacity: .8;
+        transition: all 400ms ease-in-out;
+
+    
+}
+.pilaimagen1 img:hover{
+    width: 240px;
+    opacity: 1;
+}
+
+.container-flex{
+    display: flex;
+    flex-direction: row;
+}
+.container-flex div{
+    background-color: aqua;
+    width: 60px;
+    height: 100px;
+    margin: 0 10px;
+}

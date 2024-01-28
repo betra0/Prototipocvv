@@ -1,0 +1,102 @@
+:root{
+    --black: rgb(0 0 0);
+    --white: rgb(255 255 255);
+}
+*{
+    margin: 0px;
+    padding: 0;
+    box-sizing: border-box;
+}
+body{
+    color: var(--black);
+    background-color: rgb(255, 255, 255);
+    min-height: 500vh;
+
+}
+header{
+    z-index: 10;
+  width: 100%;  
+  position:fixed;
+    top: 0;
+    height: 60px;
+    background-color: rgba(0, 0, 0, 0.0);
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0 60px 0 40px;
+    border-radius: 0 0 10px 10px;
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.705);
+    animation: scroll_header linear both;
+    animation-timeline: scroll(root) ;
+    animation-range: 0 400px;
+    
+}
+header ul{
+    font-size: 17px;
+    display: flex;
+    align-items: center;
+    list-style: none;
+    gap: 28px;
+}
+header li a{
+text-decoration: none;
+border: 1px solid rgba(255, 255, 255, 0.258);
+background-color: rgba(0, 0, 0, 0.07);
+box-shadow: 0 0 5px rgba(240, 248, 255, 0.545);
+border-radius: 10px;
+color: var(--white);
+padding: 2px 10px;
+transition: background-color 0.4s ease-in-out, 
+    color 0.4s ease-in-out;
+
+}
+header li a:hover{
+    background-color: rgba(255, 255, 255, 0.766);
+    color: black;
+}
+header img{
+    width: 90px;
+    transition: transform 500ms ease-in-out;
+    animation: scroll_logo linear both;
+    animation-timeline: scroll(root) ;
+    animation-range: 0 400px;
+    
+}
+header img:hover{
+    transform: scale(1.1);
+    transform: rotate(5deg);
+}
+
+@keyframes scroll_header{
+    to{
+        transition: transform 300ms ease-in-out;
+        background-color: rgba(0, 0, 0, 0.367);
+        backdrop-filter: blur(4px);
+        height: 50px;
+
+    }
+}
+@keyframes scroll_logo{
+    to{
+        /* transform: scale(0.8); */
+        width: 80px;
+
+    }
+}
+@media screen and (max-width: 500px) {
+    header {
+      padding: 0 10px; /* Menor padding en pantallas pequeñas */
+      
+      justify-content:space-around;
+
+    }
+/*     header img {
+      width: 70px; 
+    } */
+    header ul{
+        display: none;
+        
+    }
+    /* Otros ajustes específicos para pantallas pequeñas */
+  }
+  

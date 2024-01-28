@@ -1,5 +1,7 @@
 *{
     box-sizing: border-box;
+    margin: 0 ;
+    padding: 0;
 }
 body{
     margin: 0;
@@ -17,7 +19,9 @@ header  {
     display: flex;
     flex-direction: column;
     position: relative;
-    overflow-x: hidden;
+    /* overflow-x: hidden; */
+    border-bottom: 4px  outset rgba(0, 0, 0, 0.585);
+    border-radius: 0 0 5px 5px;
 }
 
 
@@ -31,7 +35,7 @@ header  {
     z-index: -1;
     transition: transform 1s ease;
     display: flex;
-    flex-wrap: nowrap;
+    /* flex-wrap: nowrap; */
 
 }
 
@@ -104,6 +108,7 @@ header  {
     color: black;
 }
 .main{
+    padding: 25px 0 0 0;
     height: 100%;
     display: grid;
     background-color: rgba(0, 0, 0, 0);
@@ -156,7 +161,13 @@ header  {
 }
 
 section {
+
     width: 80%; /* Ancho del section */
-    margin: 0 auto; /* Centra el section horizontalmente */
-    text-align: left; /* Alinea el texto a la izquierda */
+    margin: 20px auto 0 auto;
+
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
 }
