@@ -10,7 +10,7 @@
 body{
     color: var(--black);
     background-color: rgb(255, 255, 255);
-    min-height: 240vh;
+    min-height: 400vh;
 
 }
 header{

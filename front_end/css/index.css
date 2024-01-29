@@ -223,3 +223,46 @@ section.contacto .red:hover{
     filter:brightness(140%);
 
 }
+/* ================Secion-valoraciones================== */
+section.valoraciones{
+    background-color: #d6249e0c;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    gap: 10px;
+
+}
+.acordeon-main{
+    display: flex;
+    height: 500px;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+    max-width: 670px;
+    overflow-x: hidden;
+
+}
+.acordeon-main > svg{
+    background-color: #d6249e71;
+}
+.acordeon-main .acordeon{
+    background-color: #2724d68f;
+    flex: 1;
+    height: 100%;
+    display: flex;
+    
+    align-items: center;
+    transition: transform 1s ease-in-out;
+    transform: translateX(-0%);
+
+    
+    
+}
+.acordeon-main .comentario{
+    background-color: aqua;
+    width: 100%;
+    flex: 1 0 auto;
+}
+
