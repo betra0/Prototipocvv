@@ -225,44 +225,58 @@ section.contacto .red:hover{
 }
 /* ================Secion-valoraciones================== */
 section.valoraciones{
-    background-color: #d6249e0c;
+    background-color: #d6249e00;
     width: 100%;
     display: flex;
     flex-direction: column;
     align-items: center;
     justify-content: center;
-    gap: 10px;
+    gap: 25px;
 
 }
 .acordeon-main{
     display: flex;
-    height: 500px;
+    background-color: #d6249e00;
+    /* height: 500px; */
     align-items: center;
     justify-content: center;
     width: 100%;
     max-width: 670px;
     overflow-x: hidden;
+    
 
 }
-.acordeon-main > svg{
-    background-color: #d6249e71;
+.acordeon-main > button{
+    background:#d6249e1d;
+    border:none ;
+    
 }
 .acordeon-main .acordeon{
-    background-color: #2724d68f;
+    background-color: #2724d600;
     flex: 1;
     height: 100%;
     display: flex;
     
     align-items: center;
     transition: transform 1s ease-in-out;
-    transform: translateX(-0%);
-
-    
+    transform: translateX(-000%);
     
 }
 .acordeon-main .comentario{
-    background-color: aqua;
+    background-color: rgba(0, 255, 255, 0);
     width: 100%;
+    height: 100%;
     flex: 1 0 auto;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    justify-content: center;
+    gap: 10px;
+
+
+}
+.acordeon-main .mensaje{
+    width: 84%;
 }
 
