@@ -10,7 +10,7 @@
 body{
     color: var(--black);
     background-color: rgb(255, 255, 255);
-    min-height: 500vh;
+    min-height: 240vh;
 
 }
 header{
@@ -55,16 +55,16 @@ header li a:hover{
     color: black;
 }
 header img{
-    width: 90px;
-    transition: transform 500ms ease-in-out;
+    width: 110px;
+    transition: transform 300ms ease-in-out;
     animation: scroll_logo linear both;
     animation-timeline: scroll(root) ;
     animation-range: 0 400px;
     
 }
 header img:hover{
-    transform: scale(1.1);
-    transform: rotate(5deg);
+    transform: scale(1.1) rotate(5deg) ;
+    /* transform: ; */
 }
 
 @keyframes scroll_header{
