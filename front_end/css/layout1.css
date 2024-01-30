@@ -10,7 +10,7 @@
 body{
     color: var(--black);
     background-color: rgb(255, 255, 255);
-    min-height: 400vh;
+    min-height: 100vh;
 
 }
 header{
@@ -99,4 +99,106 @@ header img:hover{
     }
     /* Otros ajustes específicos para pantallas pequeñas */
   }
-  
+
+
+/* ====================FOOTER======================*/
+footer{
+    margin: 50px 0 0 0;
+    width: 100%;
+    
+   background-color: rgba(70, 135, 112, 1);
+    display: flex;
+    flex-direction: column;
+    border-radius: 10px 10px 0 0 ;
+
+}
+footer .top{
+    width: 100%;
+    height: 300px;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: nowrap;
+    
+}
+
+footer .top .center{
+    /* order: -1; */
+    
+    height: 100%;
+    background-color: rgba(26, 26, 26, 0);
+    color: var(--white);
+
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+}
+footer .center h4{
+    margin: 20px 0 0px 0 ;
+    font-size: 20px;
+}
+footer .center a{
+    margin: 20px 0 15px 0 ;
+}
+footer .center a img{
+    width: 140px;
+}
+footer .center .linea{
+    width: 180px;
+    background-color: white;
+    height: 1px;
+}
+footer .center .redes{
+    color: white;
+    margin: 7px 0 0 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 15px;
+
+}
+footer .left,
+footer .rigth{
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    color: var(--white);
+    gap: 10px;
+
+}
+footer h5{
+    font-size: 17px;
+}
+
+footer .buton{
+    height: 80px;
+    width: 100%;
+    background-color: rgba(40, 40, 40, 0.884);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    color: var(--white);
+    font-size: 20px;
+}
+@media screen and (max-width: 580px){
+    
+    footer .top{
+        flex-direction: column;
+        height: auto;
+        gap: 20px;
+        margin: 0 0 10px 0;
+
+    }
+    footer .top .center{
+        order: -1;
+    }
+    footer .buton{
+        font-size: 16px;
+    }
+}
