@@ -95,41 +95,39 @@ transition: background-color 0.4s ease-in-out,
 header li a:hover{
     background-color: rgba(255, 255, 255, 0.766);
     color: black;
+    
 }
-header img{
+header .logosvg{
     width: 110px;
+    color: rgb(255, 255, 255);
+    filter: url(#drop-shadow);
     transition: transform 300ms ease-in-out;
     animation: scroll_logo linear both;
     animation-timeline: scroll(root) ;
     animation-range: 0 500px;
-    
+        
 }
-header img:hover{
+header .logosvg:hover{
     transform: scale(1.1) rotate(5deg) ;
     /* transform: ; */
 }
 
 @keyframes scroll_header{
-    to{
-        
+    to{    
         background-color: rgba(0, 0, 0, 0.367);
         backdrop-filter: blur(4px);
         height: 50px;
-
     }
 }
 @keyframes scroll_menu{
-    to{
-        
+    to{  
         top:50px;
-
     }
 }
 @keyframes scroll_logo{
     to{
         /* transform: scale(0.8); */
         width: 80px;
-
     }
 }
 header > button{
@@ -195,7 +193,7 @@ footer .center h4{
 footer .center a{
     margin: 20px 0 15px 0 ;
 }
-footer .center a img{
+footer .center a .logosvg{
     width: 140px;
 }
 footer .center .linea{
