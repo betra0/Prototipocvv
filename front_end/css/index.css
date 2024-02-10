@@ -40,7 +40,7 @@ main{
     object-fit: cover; 
 }
 
-.header-body button{
+.header-body a{
     padding: 14px 6px;
     font-size: 17px;
     border-radius: 15px;
@@ -53,6 +53,8 @@ main{
     transition: box-shadow 0.4s ease-in-out,
     transform 0.3s ease-in-out,
     color 0.5s ease;
+    text-shadow: none;
+    letter-spacing: 1px;
 }
 .header-body .bt-c {
     background-color: rgb(46, 206, 92) ;
@@ -98,6 +100,7 @@ main{
     flex-wrap: nowrap;
     overflow: hidden;
     text-align: center;
+    align-items: center;
     margin: 0  0 20px 0;
     
     
@@ -120,10 +123,16 @@ main{
 .ventajas img:hover{
     transform: scale(1.15);
 }
+/* Titulo de cada ventaja */
 .ventajas h4,.ventajas h3{
     font-size: 20px;
-    
+    margin: 10px 0 10px 0;
 }
+/*  Parrafo de cada ventaja  */
+.ventajas .ventaja p{
+    width: 98%;
+}
+
 
 /*========== Secion departamentos ======== */
 
@@ -179,16 +188,29 @@ section.contacto{
     align-items: center;
     text-align: center;
 }
-section.contacto h4{
+section.contacto h5{
     width: 100%;
     max-width: 500px;
+    font-size: 16px;
 }
 section.contacto .mail{
+    padding: 2px;
     display: flex;
     align-items: center;
     text-align: center;
     gap: 5px;
     color: rgb(62, 62, 62);
+    background-color: #ffffff00;
+    transition: all 600ms ease;
+    outline: 2px solid rgba(0, 0, 0, 0);
+
+}
+section.contacto .mail:hover{
+    outline: 1px solid #000000;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.545);
+    color: #000000;
+    
+    border-radius: 10px;
 }
 
 section.contacto .redes{
