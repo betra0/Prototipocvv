@@ -3,4 +3,4 @@ Disallow: /contacto
 Disallow: /nosotros
 Disallow: /videos
 
-Sitemap: https://tudominio.com/sitemap.xml
+Sitemap: https://propiedadescvv.cl/sitemap.xml
