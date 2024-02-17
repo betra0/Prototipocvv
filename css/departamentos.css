@@ -195,9 +195,9 @@ section.departamentos .departamento .head{
     transition: all 500ms ease-in-out;
     position: relative;
 }
-section.departamentos .departamento:hover .head{
+/* section.departamentos .departamento:hover .head{
     border-bottom: 1px solid rgba(0, 0, 0, 0.629);
-}
+} */
 
 section.departamentos .head img{
     height: 100%;
