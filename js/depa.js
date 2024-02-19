@@ -22,3 +22,36 @@ document.querySelectorAll('a[href^="#"]').forEach(anchor => {
         });
     });
 });
+
+/// LOGICA DE carrusel de imagenes 
+document.querySelectorAll('.departamento').forEach(function(departamento) {
+    const carruselComentarios = departamento.querySelector('.cont-img-main .carruselmain');
+    const numImagenes = carruselComentarios.querySelectorAll('.cont-img').length;
+    const imgs = carruselComentarios.querySelectorAll('img');
+    let iImagen = 0;
+
+    function irComentarioRight() {
+        if(iImagen + 1 < numImagenes) {
+            iImagen++;
+            imgs[iImagen].classList.add('active');
+            imgs[iImagen - 1].classList.remove('active');
+            
+            carruselComentarios.style.transform = `translateX(-${iImagen * 100}%)`;
+        }
+    }
+
+    function irComentarioLeft() {
+        if(iImagen > 0) {
+            iImagen--;
+            imgs[iImagen].classList.add('active');
+            imgs[iImagen + 1].classList.remove('active');
+            
+            carruselComentarios.style.transform = `translateX(-${iImagen * 100}%)`;
+        }
+    }
+
+    departamento.querySelector('.btn-c-left').addEventListener('click', irComentarioLeft);
+    departamento.querySelector('.btn-c-rigth').addEventListener('click', irComentarioRight);
+});
+
+
