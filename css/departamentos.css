@@ -7,7 +7,7 @@
 
 
 *{
-    margin: 0px;
+    margin: 0;
     padding: 0;
     box-sizing: border-box;
     
@@ -255,37 +255,54 @@ section.departamentos .departamento .body{
     overflow: hidden;
     
 }
+/*  */
 section.departamentos .departamento:hover .body{
-    height:500px;
+    height:460px;
     background-color: rgba(0, 0, 0, 0.02);
 }
 section.departamentos .body .contentbody{
     
-    height: 400px;
+    height: 460px;
     width: 100%;
     display: flex;
     flex-direction: column;
+    align-items: center;
     
 }
 section.departamentos .contentbody .cont-img-main{
 
-    margin-top: 20px;
-
+    margin-top: 24px;
     display: flex;
-
     align-items: center;
-    justify-content: center;
+    justify-content: space-between;
     width: 100%;
-    mIN-width: 200px;
+    min-width: 200px;
 
-     
 }
+
 section.departamentos .cont-img-main button{
-    background-color: rgba(240, 248, 255, 0.352);
+    background-color: rgba(240, 248, 255, 0.552);
     border: none;
     width: 30px;
     height: 30px;
+    box-sizing: content-box;
+    padding: 10px 0 ;
+    border-radius: 5px;
+    transition: all 400ms ease;
 }
+section.departamentos .cont-img-main button:hover{
+background-color: rgba(0, 0, 0, 0.407);
+color: aliceblue;
+}
+section.departamentos .cont-img-main button:active{
+    transform: scale(0.7);
+    }
+
+section.departamentos .cont-img-main button.inactive{
+    opacity: 0.1;
+    
+}
+
 section.departamentos .cont-img-main .carruselmain{
     z-index: -1;
 
@@ -295,7 +312,6 @@ section.departamentos .cont-img-main .carruselmain{
     height: 100%;
     display: flex;
 
-    
     align-items: center;
     transition: transform 1s ease-in-out;
     transform: translateX(-000%);
@@ -314,16 +330,59 @@ section.departamentos .cont-img img{
     width: 95%;
     filter: brightness(0.5);
     object-fit: cover   ;
-    transition: all 1400ms ease;
+    
     box-shadow: 0 0 20px rgba(0, 0, 0, 0.848);
+    transition: filter 1300ms ease,
+    width 1300ms ease,
+    transform 1300ms ease;
 }
 section.departamentos .cont-img img.active{
-    filter: brightness(1.4);
-    width: 98%;
-    transform: translateY(-15px) scale(1.05);
+    filter: brightness(1.2);
+    /* width: 98%; */
+    transform: translateY(-15px) scale(1.1);
 }
+/* precio de departamento */
+section.departamentos .contprecio{
+    margin-top: 50px;
+    display: flex;
+    width: 100%;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: center;
+    gap: 20px;
 
+}
+section.departamentos .contprecio a{
+    background-color: rgb(59, 243, 114);
+    border-radius: 20px;
+    display: flex;
+    
+    align-items: center;
 
+    gap: 8px;
+    padding: 10px 11px;
+    color: white;
+    font-size: 17px;
+    letter-spacing: 2px;
+    transition: transform 600ms ease;
+}
+section.departamentos .contprecio a.tel{
+    background-color: rgb(16, 179, 95);
+    padding: 7px 11px;
+    letter-spacing: 0;
+
+}
+section.departamentos .contprecio a:hover{
+    transform: scale(1.1);
+}
+section.departamentos .contprecio > span{
+    font-size: 22px;
+    text-align: center;
+
+}
+section.departamentos .contprecio strong{
+    letter-spacing: 2px;
+}
 
 
 
@@ -368,7 +427,14 @@ section.departamentos .cont-img img.active{
     section.departamentos .head .info .icons{
         gap: 1px;
     }
+    section.departamentos .departamento:hover .body{
+        height:480px;
+    }
+    section.departamentos .body .contentbody{
+        
+        height: 480px;
 
+    }
 }
 
 

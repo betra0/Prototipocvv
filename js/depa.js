@@ -1,3 +1,5 @@
+
+
 let btn = document.getElementById('btn-menu');
 let header = document.getElementById('header');
 btn.addEventListener('click', function() {
@@ -37,6 +39,16 @@ document.querySelectorAll('.departamento').forEach(function(departamento) {
             imgs[iImagen - 1].classList.remove('active');
             
             carruselComentarios.style.transform = `translateX(-${iImagen * 100}%)`;
+            if(iImagen > 0){
+                departamento.querySelector('.btn-c-left').classList.remove('inactive');
+            }else{
+                departamento.querySelector('.btn-c-left').classList.add('inactive');
+            }
+            if(iImagen + 1 < numImagenes){
+                departamento.querySelector('.btn-c-rigth').classList.remove('inactive');
+            }else{
+                departamento.querySelector('.btn-c-rigth').classList.add('inactive');
+            }
         }
     }
 
@@ -47,6 +59,17 @@ document.querySelectorAll('.departamento').forEach(function(departamento) {
             imgs[iImagen + 1].classList.remove('active');
             
             carruselComentarios.style.transform = `translateX(-${iImagen * 100}%)`;
+            if(iImagen > 0){
+                departamento.querySelector('.btn-c-left').classList.remove('inactive');
+            }else{
+                departamento.querySelector('.btn-c-left').classList.add('inactive');
+            }
+            if(iImagen + 1 < numImagenes){
+                departamento.querySelector('.btn-c-rigth').classList.remove('inactive');
+            }else{
+                departamento.querySelector('.btn-c-rigth').classList.add('inactive');
+            }
+            
         }
     }
 
@@ -54,4 +77,14 @@ document.querySelectorAll('.departamento').forEach(function(departamento) {
     departamento.querySelector('.btn-c-rigth').addEventListener('click', irComentarioRight);
 });
 
+ // Obtenemos el elemento span donde queremos mostrar el precio
+ let precioSpan = document.getElementById("precio-1");
+ let precioSpan2 = document.getElementById("precio-2");
+ let precioSpan3 = document.getElementById("precio-3");
+ let precioSpan4 = document.getElementById("precio-4");
 
+    
+ precioSpan.textContent = depa1.toLocaleString(); 
+ precioSpan2.textContent = depa2.toLocaleString();
+ precioSpan3.textContent = depa3.toLocaleString();
+ precioSpan4.textContent = depa4.toLocaleString();
