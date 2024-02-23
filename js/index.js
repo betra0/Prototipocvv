@@ -18,7 +18,7 @@ setInterval(() => {
 
 const carruselcomentarios = document.querySelector('.acordeon-main .acordeon');
 const numcomentarios = document.querySelectorAll('.acordeon-main .main-comentario').length;
-const tiempoCambio_comentario = 3000;
+const tiempoCambio_comentario = 5000;
 let i_cometario = 0;
 let intervaloCarrusel;
 
