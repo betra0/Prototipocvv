@@ -254,9 +254,11 @@ section.valoraciones{
     flex-direction: column;
     align-items: center;
     justify-content: center;
+    text-align: center;
     gap: 25px;
 
 }
+
 .acordeon-main{
     display: flex;
 
@@ -322,4 +324,28 @@ section.valoraciones{
     padding: 10px 0;
     box-shadow: 0 0 10px rgba(0, 0, 0, 0.545);
     margin: 10px 0;
+}
+
+
+
+
+
+
+
+
+
+@media screen and (max-width: 500px){
+    section.departamentos{
+        gap: 1px;
+    }
+
+    section.departamentos a{
+        padding: 0 15px;
+        font-size: 14px;
+        height: 54px;
+    }
+    section.departamentos h2{
+        font-size: 20px;
+    }
+        
 }
