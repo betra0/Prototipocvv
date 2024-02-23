@@ -27,6 +27,9 @@ main{
     border-radius: 0 0 10px 10px;
 
 }
+.header-body h1{
+    letter-spacing: 2px;
+}
 .fondo{
     left: 0;
     z-index: -1;
@@ -134,6 +137,7 @@ main{
 .ventajas h4,.ventajas h3{
     font-size: 20px;
     margin: 10px 0 10px 0;
+    letter-spacing: 1px;
 }
 /*  Parrafo de cada ventaja  */
 .ventajas .ventaja p{
@@ -198,7 +202,7 @@ section.contacto{
 section.contacto h5{
     width: 95%;
     max-width: 550px;
-    font-size: 16px;
+    font-size: 17px;
     font-weight:normal;
 }
 section.contacto h2{
@@ -269,6 +273,9 @@ section.valoraciones{
     text-align: center;
     gap: 25px;
 
+}
+section.valoraciones h2{
+    letter-spacing: 1px;
 }
 
 .acordeon-main{
