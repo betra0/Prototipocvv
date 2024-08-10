@@ -113,8 +113,16 @@ main{
     text-align: center;
     align-items: center;
     margin: 0  0 20px 0;
+
+    transition: transform 400ms ease-in-out,
+    box-shadow 400ms ease-in-out;
     
     
+}
+.ventajas .ventaja:hover{
+    box-shadow: 1px 1px 7px rgba(0, 0, 0, 0.534);
+
+    transform: translateY(-20px);
 }
 .ventajas .contentimg{
     width: 100%;
