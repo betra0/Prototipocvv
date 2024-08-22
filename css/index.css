@@ -7,6 +7,8 @@ main{
     width: 100%;
     /* font-family:"Roboto", sans-serif; */
     font-family: "EB Garamond", serif;
+    /* color: black;
+    background-color: white; */
 }
 .header-body{
     position: relative;
@@ -25,6 +27,7 @@ main{
     background-color: rgba(0, 0, 0, 0.08);
     gap:40px;
     border-radius: 0 0 10px 10px;
+    z-index: 1;
 
 }
 .header-body h1{
